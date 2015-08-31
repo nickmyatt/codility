@@ -1,7 +1,7 @@
 # https://codility.com/demo/take-sample-test/count_div/
 
 def count_lte(base, mod):
-    """Number of positive integers less than or
+    """Number of non-negative integers less than or
     equal to `base` which are divisible by `mod`"""
     if base < 0:
         return 0
