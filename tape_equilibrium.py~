@@ -1,0 +1,11 @@
+# https://codility.com/demo/take-sample-test/tape_equilibrium/
+
+def solution(A):
+    left  = A[0]
+    right = sum(A[1:])
+    min_diff = right
+    for p in xrange(1, len(A) - 1):
+        left  += A[p]
+        right -= A[p]
+        min_diff = min(min_diff, abs(left - right))
+    return min_diff
