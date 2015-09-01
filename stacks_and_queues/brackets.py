@@ -4,7 +4,7 @@ def solution(chars):
     brackets = { '[' : ']', '{' : '}', '(' : ')' }
     stack = []
     for c in chars:
-        if stack and brackets.get(stack[-1], None) == c:
+        if stack and brackets.get(stack[-1]) == c:
             stack.pop()
         else:
             stack.append(c)
